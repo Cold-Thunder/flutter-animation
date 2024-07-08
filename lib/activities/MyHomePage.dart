@@ -2,7 +2,10 @@ import 'dart:ffi';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/activities/Clip.dart';
 import 'package:flutter_animation/activities/Tiles.dart';
+import 'package:flutter_animation/activities/TweenAnim.dart';
+import 'package:flutter_animation/activities/WheelList.dart';
 
 class Myhomepage extends StatefulWidget{
   @override
@@ -120,6 +123,48 @@ class _Myhomepage extends State<Myhomepage>{
                 onPressed: (){
                   Navigator.push(context,
                   MaterialPageRoute(builder: (context)=> Tiles())
+                  );
+                }
+              ),
+              ElevatedButton(
+                child: const Text('Go to Wheel', style: TextStyle(fontSize: 22, color: Colors.white)),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  )
+                ),
+                onPressed: (){
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=>Wheel())
+                  );
+                }
+              ),
+              ElevatedButton(
+                child: const Text('Go to Clip', style: TextStyle(fontSize: 22, color: Colors.white)),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.orange,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)
+                  )
+                ),
+                onPressed:(){
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=>ClipCont())
+                  );
+                }
+              ),
+              ElevatedButton(
+                child: const Text('Go to Tween', style: TextStyle(fontSize: 22, color: Colors.white)),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.brown,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)
+                  )
+                ),
+                onPressed: (){
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=>TweenAnim())
                   );
                 }
               )
