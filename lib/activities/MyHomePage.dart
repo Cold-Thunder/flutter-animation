@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animation/activities/Clip.dart';
+import 'package:flutter_animation/activities/RippleEffect.dart';
 import 'package:flutter_animation/activities/Tiles.dart';
 import 'package:flutter_animation/activities/TweenAnim.dart';
 import 'package:flutter_animation/activities/WheelList.dart';
@@ -167,6 +168,20 @@ class _Myhomepage extends State<Myhomepage>{
                   MaterialPageRoute(builder: (context)=>TweenAnim())
                   );
                 }
+              ),
+              ElevatedButton(
+                  child: const Text('Go to Ripple', style: TextStyle(fontSize: 22, color: Colors.white)),
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.brown,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)
+                      )
+                  ),
+                  onPressed: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>RippleEffect())
+                    );
+                  }
               )
             ]
           )

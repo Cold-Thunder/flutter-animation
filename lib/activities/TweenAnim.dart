@@ -5,7 +5,7 @@ class TweenAnim extends StatefulWidget{
   @override
   _TweenAnim createState()=>_TweenAnim();
 }
-class _TweenAnim extends State<TweenAnim> with TickerProviderStateMixin{
+class _TweenAnim extends State<TweenAnim> with SingleTickerProviderStateMixin{
   late Animation animWidth;
   late Animation animHeight;
   late Animation animRad;
