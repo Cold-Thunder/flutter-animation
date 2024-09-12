@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation/activities/MyHomePage.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_animation/activities/clippath_pac.dart';
+import 'package:flutter_animation/advance_anim/class1.dart';
+import 'package:flutter_animation/advance_anim/class2.dart';
+import 'package:flutter_animation/advance_anim/hero_widget.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarIconBrightness: Brightness.light
+    )
+  );
   runApp(const MyApp());
 }
 
@@ -18,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Myhomepage()
+      home: HeroWidget()
     );
   }
 }
