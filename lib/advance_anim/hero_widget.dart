@@ -71,7 +71,7 @@ class _StateHeroWidget extends State<HeroWidget>{
                               color: Colors.transparent,
                                child: ScaleTransition(
                                    scale: animation.drive(
-                                       Tween<double>(begin: 3, end: 1)
+                                       Tween<double>(begin: 2, end: 1)
                                    ),
                                 child: fromHeroContext.widget
                                )
