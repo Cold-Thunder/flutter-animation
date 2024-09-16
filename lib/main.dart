@@ -5,6 +5,7 @@ import 'package:flutter_animation/advance_anim/class1.dart';
 import 'package:flutter_animation/advance_anim/class2.dart';
 import 'package:flutter_animation/advance_anim/class3_implicit.dart';
 import 'package:flutter_animation/advance_anim/class4_clipping_path.dart';
+import 'package:flutter_animation/advance_anim/customPaintClass.dart';
 import 'package:flutter_animation/advance_anim/hero_widget.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ClippingPath()
+      home: CustomPaintClass()
     );
   }
 }
