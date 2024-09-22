@@ -61,25 +61,20 @@ class AnimPainter extends CustomPainter{
     final center = Offset(size.width/2, size.height/2);
     final radius = size.width/2;
     double angel = 142;
-    final angels = List<double>.generate(5, (index)=>index*5);
-    //
-    // path.moveTo(
-    //   center.dx + radius*cos(0),
-    //   center.dy + radius*cos(0)
-    // );
-    //
-    // for(double angel in angels){
-    //   path.lineTo(
-    //     center.dx + radius*cos(angel),
-    //     center.dy + radius*cos(angel)
-    //   );
-    // }
-    // path.close();
-    path.moveTo(100, 100);
-    path.lineTo(200, 300);
+    final angels = List<double>.generate(6, (index)=>index*angel);
 
+    path.moveTo(
+      center.dx + radius*cos(0),
+      center.dy + radius*cos(0)
+    );
+
+    for(double ang in angels){
+      path.lineTo(
+          center.dx+radius*cos(ang),
+          center.dy+radius*sin(ang)
+      );
+    }
     canvas.drawPath(path, paint);
-
   }
 
   @override
