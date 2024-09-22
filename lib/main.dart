@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animation/activities/clippath_pac.dart';
+import 'package:flutter_animation/advance_anim/3d_drawer.dart';
 import 'package:flutter_animation/advance_anim/class1.dart';
 import 'package:flutter_animation/advance_anim/class2.dart';
 import 'package:flutter_animation/advance_anim/class3_implicit.dart';
 import 'package:flutter_animation/advance_anim/class4_clipping_path.dart';
+import 'package:flutter_animation/advance_anim/creative_prac.dart';
 import 'package:flutter_animation/advance_anim/customPaintClass.dart';
 import 'package:flutter_animation/advance_anim/hero_widget.dart';
+import 'package:flutter_animation/advance_anim/paint_prac.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -30,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: CustomPaintClass()
+      home: PaintPrac()
     );
   }
 }
